@@ -1,10 +1,11 @@
 <?php
 
-
 interface Builder
 {
     public function producePartA();
+
     public function producePartB();
+
     public function producePartC();
 }
 
@@ -29,6 +30,7 @@ class ConcreteBuilder1 implements Builder
     {
         $this->product->parts[] = "PartB1";
     }
+
     public function producePartC()
     {
         $this->product->parts[] = "PartC1";
